@@ -4,7 +4,7 @@ const pc = newPlayableCharacter(100, 110)
 // Create a non-playable character
 const npc = newNonPlayableCharacter(50, 300)
 
-// have the NPC start walking east immediately
+// create looping function that moves NPC around map
 async function moveNPC(){
     let test = 1;
     while(test < 2){
@@ -18,6 +18,7 @@ async function moveNPC(){
     }
 }
 
+// invokes moving NPC function
 moveNPC();
 
 // Create the inventory

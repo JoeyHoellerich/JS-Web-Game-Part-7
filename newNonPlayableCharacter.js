@@ -30,6 +30,9 @@ function newNonPlayableCharacter(x, y) {
 
     setInterval(moveCharacter, 1)
 
+    // create async walking functions
+    // each will move the NPC for (time) in ms.
+    // sleep pauses execution of function for (time) in ms
     async function walkEast(time) {
         direction = 'east'
         element.src = `./assets/red-character/east.gif`
